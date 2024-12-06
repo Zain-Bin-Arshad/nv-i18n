@@ -357,7 +357,7 @@ public class CountryCodeTest
     @Test
     public void test39()
     {
-        // TL and TP have the same numeric code 626. GB should be used.
+        // TL and TP have the same numeric code 626. TL should be used.
         assertSame(CountryCode.TL, CountryCode.getByCode(626));
         assertSame(CountryCode.TL, CountryCode.getByCode(CountryCode.TL.getNumeric()));
         assertSame(CountryCode.TL, CountryCode.getByCode(CountryCode.TP.getNumeric()));
